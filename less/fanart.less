@@ -1,0 +1,131 @@
+
+.fanart{
+  .container{
+    .area();
+    padding: 66px 0 82px 0;
+    display: flex;
+    justify-content: space-between;
+    .fanart-left{
+      width: 820px;
+      height: 424px;
+      .fanart-left-content{
+        margin-top: 21px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .item{
+          position: relative;
+          width: 192px;
+          height: 176px;
+          overflow: hidden;
+          margin-bottom: 17px;
+          &:hover{
+            img{
+              transform: scale(1.3);
+            }
+            .cover{
+              height: 67px;
+            }
+          }
+          img{
+            width: 100%;
+            height: 100%;
+            transition: all 0.3s;
+          }
+          .cover{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            color: #fff;
+            font-weight: 700;
+            overflow: hidden;
+            background: url(../images/sprite/head-nav-cover.png);
+            width: 192px;
+            // height: 67px;
+            height: 0;
+            transition: height 0.3s;
+          }
+        }
+      }
+    }
+    .fanart-right{
+      width: 496px;
+      height: 424px;
+      display: flex;
+      justify-content: space-between;
+      .fanart-right-left{
+        position: relative;
+        width: 241px;
+        height: 411px;
+        margin-top: 13px;
+        &:hover{
+          margin-top: -5px;
+        }
+        transition: margin-top 0.4s;
+        a{
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .p1{
+          position: absolute;
+          left: 0;
+          bottom: 103px;
+          text-align: center;
+          width: 100%;
+          height: 30px;
+          line-height: 30px;
+          color: #fff;
+          font-size: 16px;
+          vertical-align: middle;
+        }
+      }
+      .fanart-right-right{
+        width: 240px;
+        height: 369px;
+        margin-top: 55px;
+        .item{
+          position: relative;
+          width: 240px;
+          height: 87px;
+          margin-bottom: 16px;
+          &:nth-child(3){
+            margin-bottom: 18px;
+          }
+          .content{
+            position: absolute;
+            height: 17px;
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
+            color: #fff;
+            font-size: 16px;
+            i{
+              margin-right: 5px;
+            }
+          }
+        }
+        .href-partner{
+          width: 239px;
+          height: 58px;
+          line-height: 58px;
+          text-align: center;
+          color: #fff;
+          font-size: 16px;
+          .index();
+          background-position: -193px -253px;
+          .r-arrow{
+            background-position: -342px -99px;
+          }
+          &:hover{
+            .r-arrow{
+              animation: r-arrow 1.5s linear infinite;
+            }
+            
+          }
+        }
+      }
+    }
+  }
+}

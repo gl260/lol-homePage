@@ -1,0 +1,94 @@
+
+.r-nav{
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 70px;
+  height: 410px;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 9px 0 0 9px;
+  padding-top: 6px;
+  .item{
+    width: 66px;
+    margin: 0 auto 6px;
+    text-align: center;
+    animation: r-nav-animation 0.5s;
+    &:hover{
+      a{
+        span{
+          i{
+            animation: r-nav-animation 1.3s;
+          }
+          .r-hot-act{
+            background-position: -216px -99px
+          }
+          .r-spzx{
+            background-position: -193px -99px;
+          }
+          .r-sszx{
+            background-position: -247px -46px;
+          }
+          .r-hero-data{
+            background-position: -293px -72px;
+          }
+          .r-fanart{
+            background-position: -258px -12px;
+          }
+        }
+        p{
+          color: #309cac;
+          font-weight: 700;
+        }
+      }
+      
+    }
+    span{
+      display: block;
+      width: 66px;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      i{
+        display: block;
+      }
+    }
+    p{
+      color: #92a8ab;
+      font-size: 12px;
+    }
+  }
+}
+
+// 动画
+@keyframes r-nav-animation{
+  0% {
+    // transform: scale(1.2, 0.6);
+    // transform-origin: bottom;
+  }
+  5% {
+    transform: scale(1.2, 0.6);
+    transform-origin: bottom;
+  }
+  30% {
+    transform: scaleY(1);
+    transform: translateY(-12px);
+  }
+  50% {
+    // transform: translateY(0);
+    transform: scale(1.1,0.8);
+    transform-origin: bottom;
+  }
+  70% {
+    transform: scaleY(1);
+    transform: translateY(-4px);
+  }
+  85%{
+    transform: scaleY(0.9);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}

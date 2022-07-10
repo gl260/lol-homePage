@@ -1,0 +1,59 @@
+@import url(./mixins.less);
+.footer{
+  background-color: #e3e2e2;
+  color: #9f9378;
+  font-size: 12px;
+  .container{
+    .area();
+    padding: 45px 0;
+    .footer-left{
+      float: left;
+      width: 337px;
+      height: 100px;
+      padding: 15px 20px;
+      margin-top: 25px;
+      // background-color: pink;
+      a{
+        text-indent: -9999px;
+      }
+      .tencent{
+        display: inline-block;
+        width: 189px;
+        height: 34px;
+        .topfoot();
+        background-position: -216px 0;
+        margin-right: 35px;
+      }
+      .riot{
+        display: inline-block;
+        width: 98px;
+        height: 28px;
+        background:url(../images/footer/rigo.png)
+      }
+    }
+    .footer-right{
+      float: right;
+      width: 750px;
+      height: 144px;
+      padding: 15px 20px;
+      .item{
+        display: flex;
+        line-height: 20px;
+        // font-size: 0;
+        a{
+          // font-size: 12px;
+          color: #9f9378;
+          &:hover{
+            text-decoration: underline;
+          }
+          img{
+            margin-top: 2px;
+          }
+        }
+        span{
+          margin: 0 2px;
+        }
+      }
+    }
+  }
+}

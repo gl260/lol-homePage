@@ -1,0 +1,441 @@
+@import url(./mixins.less);
+.icon-new{
+  .topfoot();
+  background-position: -381px -65px;
+}
+.icon-hot{
+  .topfoot();
+  background-position: -347px -84px;
+}
+.icon-new-1{
+  .common();
+  background-position: -301px -46px;
+  width: 29px;
+  height: 14px;
+}
+.cover-border{
+  display: block;
+  .common();
+  background-position: 0 0;
+}
+.cover-border-2{
+  display: block;
+  .index();
+  background-position: -401px 0;
+  background-size: 638px 563px;
+}
+.cover-border-3{
+  display: block;
+  .index();
+  background-position: 0 0;
+}
+.inline-icon-1{
+  display: inline-block;
+  .index();
+  background-position: -484px -226px;
+  width: 17px;
+  height: 17px;
+  vertical-align: middle;
+  margin: -3px 10px 0 10px;
+}
+// 指引
+.icon-zhiyin{
+  .common();
+  background-position: -244px -72px;
+  width: 20px;
+  height: 22px;
+}
+// 礼包
+.icon-gift{
+  .common();
+  background-position: -285px -99px;
+  width: 19px;
+  height: 21px;
+}
+// 在线客服
+.icon-kf{
+  .common();
+  background-position: -316px -12px;
+  width: 22px;
+  height: 20px;
+}
+// 秩序殿堂
+.icon-zxdt{
+  .common();
+  background-position: -219px -72px;
+  width: 20px;
+  height: 22px;
+}
+// 游戏资料
+.icon-yxzl{
+  .common();
+  background-position: -343px -12px;
+  width: 23px;
+  height: 19px;
+}
+// 峡谷之巅
+.icon-xgzd{
+  .common();
+  background-position: -193px -72px;
+  width: 21px;
+  height: 22px;
+}
+// 云顶之弈
+.icon-ydzy{
+  .common();
+  background-position: -280px -125px;
+  width: 22px;
+  height: 19px
+}
+// 攻略中心
+.icon-glzx{
+  .common();
+  background-position: -371px -12px;
+  width: 22px;
+  height: 19px;
+}
+// LOL宇宙
+.icon-yz{
+  .common();
+  background-position: -274px -46px;
+  width: 22px;
+  height: 19px;
+}
+// 微信绑定
+.icon-wxbd{
+  .common();
+  background-position: -193px -46px;
+  width: 22px;
+  height: 21px;
+}
+// icon的缩放动画
+@keyframes icon-scale{
+  0%{
+    transform: scale(1.1);
+  }
+  40%{
+    transform: scale(0.8);
+  }
+  60%{
+    transform: scale(1.3);
+  }
+  80%{
+    transform: scale(0.9);
+  }
+  100%{
+    transform: scale(1.1);
+  }
+}
+// 
+.icon-0-left{
+  display: inline-block;
+  .index();
+  background-position: -531px -226px;
+  width: 20px;
+  height: 9px;
+  margin: 0 12px;
+}
+.icon-0-right{
+  display: inline-block;
+  .index();
+  background-position: -506px -226px;
+  width: 20px;
+  height: 9px;
+  margin: 0 12px;
+}
+
+
+// 小箭头
+.r-arrow{
+  display: inline-block;
+  .common();
+  width: 15px;
+  height: 9px;
+  background-position: -213px -126px;
+  background-size: 393px 200px;
+  margin-left: 2px;
+  &:hover{
+    animation: r-arrow 1.5s linear infinite;
+  }
+}
+.r-arrow-2{
+  display: inline-block;
+  .common();
+  width: 15px;
+  height: 9px;
+  background-position: -362px -99px;
+  background-size: 393px 200px;
+  margin-left: 2px;
+  
+}
+
+//下一页
+.r-next{
+  display: inline-block;
+  .common();
+  background-position: -308px -99px;
+  width: 12px;
+  height: 13px;
+  margin-left: 2px;
+  vertical-align: middle;
+  margin-bottom: 2px;
+}
+
+// 
+.t-arrow{
+  display: block;
+  .index();
+  background-position: -556px -226px;
+  width: 14px;
+  height: 7px;
+  position: absolute;
+  top: -7px;
+  right: 114px;
+}
+
+//  0% 18% 27% 36% 54% 100%
+//  0  4   1   4   0   0
+// 全过程在x轴, 1.5s完成
+@keyframes r-arrow{
+  0%, 100%, 54% {
+    transform: translateX(0);
+  }
+  18%, 36% {
+    transform: translateX(4px);
+  }
+  27% {
+    transform: translateX(1px);
+  }
+}
+
+// top-tab
+.top-tab{
+  position: relative;
+  width: 100%;
+  height: 35px;
+  box-sizing: border-box;
+  // border-bottom: 1px solid #e0e2e2;
+  .top-tab-h2title{
+    // position: absolute;
+    float: left;
+    height: 28px;
+    box-sizing: border-box;
+    font-size: 24px;
+    font-weight: 400;
+    margin-right: 26px;
+    margin-left: 6px;
+    &::after{
+      content: '';
+      display: inline-block;
+      position: absolute;
+      left: -10px;
+      top: 6px;
+      width: 4px;
+      height: 28px;
+      background-color: #1da6ba;
+    }
+  }
+  .top-tab-title{
+    display: flex;
+    border-bottom: 1px solid #e0e2e2;
+    height: 35px; 
+    li{
+      position: relative;
+      font-size: 16px;
+      color: #676767;
+      width: auto;
+      height: 38px;
+      line-height: 35px;
+      min-width: 40px;
+      text-align: center;
+      &:hover{
+        font-weight: 700;
+        color: #1da6ba;
+        &::after{
+          content: "";
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          background: url(../images/sprite/top-tab.png) center center;
+          box-sizing: border-box;
+          width: 100%;
+          height: 7px;
+          transform: translate(-50%);
+          animation: top-title 0.1s linear;
+        }
+      }
+    }
+    i{
+      display: inline-block;
+      width: 29px;
+      height: 14px;
+    }
+  }
+  .next{
+    position: absolute;
+    top: 0;
+    right: 70px;
+    color: #7ea1a6;
+    height: 35px;
+    line-height: 35px;
+    &:hover{
+      color: #1da6ba;
+      i{
+        background-position: -325px -99px;
+      }
+    }
+    &::after{
+      content: '';
+      width: 1px;
+      height: 10px;
+      position: absolute;
+      top: 12px;
+      right: -10px;
+      background-color: #cacbcc;
+    }
+  }
+  .more{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 35px;
+    font-size: 12px;
+    color: #7ea1a6;
+    line-height: 35px;
+    &:hover{
+      text-decoration: underline;
+      .r-arrow{
+        animation: r-arrow 1.5s linear infinite;
+      }
+      
+    }
+  }
+}
+@keyframes top-title{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 100%;
+  }
+}
+
+// span.type-item
+.type-item{
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 10px;
+  width: 36px;
+  height: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.notice-item{
+  color: #bb9a6c;
+  border: 1px #c5ab86 solid;
+}
+.notice-hover:hover{
+  color: #bb9a6c !important;
+}
+.new-item{
+  border: 1px #69c5d2 solid;
+  color: #1da6ba;
+}
+.new-hover:hover{
+  color: #1da6ba !important;
+}
+.teaching-item{
+  color: #4ba36a;
+  border: 1px #4ba36a solid;
+}
+.teaching-hover:hover{
+  color: #4ba36a !important;
+}
+.video-item{
+  color: #e9852d;
+  border: 1px #e9852d solid;
+}
+.video-hover:hover{
+  color: #e9852d !important;
+}
+
+// 清除浮动
+.clear_fix::after{
+  content: "";
+  clear: both;
+  display: block;
+  /* 浏览器兼容 */
+  visibility: hidden;
+  height: 0;
+}
+
+// cover-border-inner
+.cover-border-inner{
+  // 当盒子的高度是由内容撑起的时候,可以使用这种方式进行垂直居中
+  // margin-top: 50%; 不能使用这个,因为它参考的是包含块的"宽度"(也就是父元素的宽度)
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding: 0 10px;
+  h4{
+    font-size: 16px;
+    font-weight: 400;
+    color: #cdbe91;
+    text-align: center;
+    margin-bottom: 2px;
+  }
+  .p1{
+    font-size: 12px;
+    color: #9d9c9c;
+    max-height: 73px;
+    text-align: center;
+  }
+}
+
+// r-nav: 侧边固定栏
+// 热门活动
+.r-hot-act{
+  .common();
+  background-position: -239px -99px;
+  width: 18px;
+  height: 22px;
+}
+// 视屏中心
+.r-spzx{
+  .common();
+  background-position: -262px -99px;
+  width: 18px;
+  height: 22px;
+}
+
+// 赛事中心
+.r-sszx{
+  .common();
+  background-position: -220px -46px;
+  width: 22px;
+  height: 21px;
+}
+
+// 英雄资料
+.r-hero-data{
+  .common();
+  background-position: -269px -72px;
+  width: 19px;
+  height: 22px;
+}
+
+// FANART
+.r-fanart{
+  .common();
+  background-position: -287px -12px;
+  width: 24px;
+  height: 20px;
+}
+
+// 回到顶部
+.r-return-top{
+  .common();
+  background-position: -193px -12px;
+  width: 33px;
+  height: 29px;
+}
