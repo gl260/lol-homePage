@@ -1,6 +1,8 @@
 # lol-homePage
 
-英雄联盟官网首页静态页面,纯 html,css(less).
+英雄联盟官网首页静态页面,纯 html,css(less). 
+
+**只是将less引入到本地,lessc.js文件,唯一的js文件**
 
 基本做到还原(热门活动结构--新皮肤模块一部分功能需要js,没有实现)
 
